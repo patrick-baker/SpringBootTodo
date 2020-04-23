@@ -1,10 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 export default function WelcomeComponent() {
     let {name} = useParams();
     return(
-        <div>Welcome {name}</div>
+        <div>Welcome {name}. You can manage your todos <Link to="/list">here</Link>.</div>
     )
 
 }
